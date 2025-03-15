@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Love Letter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Starry Night Background -->
+    <div class="stars"></div>
+
+    <!-- Sun/Moon -->
+    <div class="sun-moon"></div>
+
+    <!-- Envelope -->
+    <div class="envelope" onclick="openEnvelope()">
+        <div class="flap"></div>
+        <div class="letter">
+            <h2>My Dearest,</h2>
+            <p id="typed-text"></p>
+            <div class="signature">Forever Yours,<br>Smit</div>
+        </div>
+    </div>
+
+    <!-- Bluebell Flowers -->
+    <div class="bluebells">
+        <div class="bluebell left-top"></div>
+        <div class="bluebell right-top"></div>
+        <div class="bluebell left-bottom"></div>
+        <div class="bluebell right-bottom"></div>
+    </div>
+
+    <!-- Hearts -->
+    <div class="hearts">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+
+    <!-- Date Counter -->
+    <div class="counter">
+        <span id="days">0</span> Days Together
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <button id="themeToggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
