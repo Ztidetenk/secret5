@@ -55,7 +55,7 @@ function typeText(element, text, speed = 50) {
 }
 
 // Date Counter
-const startDate = new Date('2025-03-01'); // Replace with your start date
+const startDate = new Date('2025-08-08'); // Replace with your start date
 const today = new Date();
 const diffTime = Math.abs(today - startDate);
 const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
@@ -66,4 +66,5 @@ function toggleTheme() {
     document.body.classList.toggle('dark-mode');
     const button = document.getElementById('themeToggle');
     button.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+
 }
